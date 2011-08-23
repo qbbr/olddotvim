@@ -212,8 +212,8 @@ vmap <F12> <esc>:Ex<cr>i
 imap <F12> <esc>:Ex<cr>i
 
 " Парные скобки
-imap [ []<LEFT>
-imap {<CR> {<CR>}<Esc>0
+"imap [ []<LEFT>
+"imap {<CR> {<CR>}<Esc>0
 
 " php-doc
 inoremap <C-D> <ESC>:call PhpDocSingle()<CR>i
