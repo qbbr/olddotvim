@@ -14,6 +14,8 @@
 " Sokolov Innokenty, <sokolov.innokenty@gmail.com>
 "--------------------------------------------------
 
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
 " fix ssh > vim > color
 if has("terminfo")
