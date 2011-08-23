@@ -14,8 +14,8 @@
 " Sokolov Innokenty, <sokolov.innokenty@gmail.com>
 "--------------------------------------------------
 
-call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
+call pathogen#runtime_append_all_bundles()
 
 " fix ssh > vim > color
 if has("terminfo")
@@ -27,6 +27,8 @@ else
     let &t_Sf="\e[3%dm"
     let &t_Sb="\e[4%dm"
 endif
+
+"set term=$TERM
 
 set nocompatible                            " режим несовместимый с Vi
 set tabstop=4                               " количество пробелов для табуляции
@@ -49,7 +51,7 @@ set wildmode=list:longest,full              " вывести весь списо
 set foldenable!                             " выключаем фолдинг(сворачивание)
 " set foldmethod=indent                       " фолдинг по отступам
 
-set hlsearch                                " включаем подсветку выражения, которое ищется в тексте
+" set hlsearch                                " включаем подсветку выражения, которое ищется в тексте
 set incsearch                               " поиск по набору текста
 set smartcase                               " если искомое выражения содержит символы в верхнем регистре – ищет с учётом регистра, иначе – без учёта
 " set ignorecase                              " игнорировать регистр
@@ -114,14 +116,16 @@ set sessionoptions=curdir,buffers,tabpages  " опции сессий
 set spelllang=ru,en                         " список языков
 
 syntax on                                   " подсветка синтаксиса
-filetype on                                 " распознавание типов файлов (~/.vim/filetype.vim)
+" filetype on                                 " распознавание типов файлов (~/.vim/filetype.vim)
+filetype plugin indent on                   " автоматическое определение типов файлов
 
 colorscheme wombat
-"highlight Normal guibg=grey90
-"highlight Cursor guibg=Green guifg=NONE
-"highlight NonText guibg=grey80
-"highlight Constant gui=NONE guibg=grey95
-"highlight Special gui=NONE guibg=grey95
+
+" NERDTree
+let NERDTreeIgnore=['\.pyc', '\.swp', '\.git', '\.hg', '\.svn', '\.bzr']
+let NERDTreeShowHidden=1
+let NERDTreeKeepTreeInNewTab=1
+
 function! StripTrailingWhitespaces(command)
     " Preparation: save last search, and cursor position.
     let _s=@/
@@ -135,7 +139,6 @@ function! StripTrailingWhitespaces(command)
 endfunction
 nmap _$ :call StripTrailingWhitespaces("%s/\\s\\+$//e")<CR>
 
-"runtime! debian.vim
 
 "=======================
 "=== горячие клавиши ===
@@ -146,9 +149,6 @@ imap >Ins> <Esc>i
 
 " Пробел в нормальном режиме перелистывает страницы
 "nmap <Space> <PageDown>
-
-" CTRL-F для omni completion
-map <C-F> <C-X><C-O>
 
 " Bubble single lines
 nmap <C-Up> [e
@@ -164,9 +164,6 @@ vmap <C-Down> ]egv
 "map <C-V> "+P
 "vmap <C-V> <esc>"+pli
 "imap <C-V> <esc>"+pli
-
-" Shift+Insert (Xterm mode)
-"map <S-Insert> <MiddleMouse>
 
 " Поиск и замена слова под курсором
 nmap ; :%s/\<<c-r>=expand("<cword>")<cr>\>/
@@ -211,10 +208,6 @@ nmap <F12> :Ex<cr>
 vmap <F12> <esc>:Ex<cr>i
 imap <F12> <esc>:Ex<cr>i
 
-" Парные скобки
-"imap [ []<LEFT>
-"imap {<CR> {<CR>}<Esc>0
-
 " php-doc
 inoremap <C-D> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-D> :call PhpDocSingle()<CR>
@@ -226,5 +219,3 @@ vnoremap <C-D> :call PhpDocRange()<CR>
 " PHP parser check (CTRL-L)
 :autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
 
-imap <buffer> <F11> <C-O>:call PhpInsertUse()<CR>
-map <buffer> <F11> :call PhpInsertUse()<CR>
