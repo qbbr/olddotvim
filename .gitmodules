@@ -28,3 +28,6 @@
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/mikewest/vim-markdown.git
+[submodule "bundle/vim-bufexplorer"]
+	path = bundle/vim-bufexplorer
+	url = git://github.com/onehouse/vim-bufexplorer.git
