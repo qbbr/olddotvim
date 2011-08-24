@@ -7,7 +7,7 @@
 [submodule "bundle/gundo"]
 	path = bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
-[submodule "bundle/vim-json"]
+[submodule "bundle/json"]
 	path = bundle/vim-json
 	url = git://github.com/leshill/vim-json.git
 [submodule "bundle/nerdtree"]
@@ -16,19 +16,19 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/zencoding-vim"]
+[submodule "bundle/zencoding"]
 	path = bundle/zencoding-vim
 	url = git://github.com/mattn/zencoding-vim.git
-[submodule "bundle/vim-css-color"]
+[submodule "bundle/css-color"]
 	path = bundle/vim-css-color
 	url = git://github.com/skammer/vim-css-color.git
-[submodule "bundle/vim-less"]
+[submodule "bundle/less"]
 	path = bundle/vim-less
 	url = git://github.com/groenewege/vim-less.git
-[submodule "bundle/vim-markdown"]
+[submodule "bundle/markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/mikewest/vim-markdown.git
-[submodule "bundle/vim-bufexplorer"]
+[submodule "bundle/bufexplorer"]
 	path = bundle/vim-bufexplorer
 	url = git://github.com/onehouse/vim-bufexplorer.git
 [submodule "bundle/taglist"]
@@ -40,7 +40,7 @@
 [submodule "bundle/marksbrowser"]
 	path = bundle/marksbrowser
 	url = git://github.com/vim-scripts/Marks-Browser.git
-[submodule "bundle/vim-unimpaired"]
+[submodule "bundle/unimpaired"]
 	path = bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/delimitMate"]
@@ -55,7 +55,7 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
-[submodule "bundle/vim-surround"]
+[submodule "bundle/surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
 [submodule "bundle/repeat"]
