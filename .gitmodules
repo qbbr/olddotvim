@@ -8,7 +8,7 @@
 	path = bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
 [submodule "bundle/json"]
-	path = bundle/vim-json
+	path = bundle/json
 	url = git://github.com/leshill/vim-json.git
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
@@ -17,19 +17,19 @@
 	path = bundle/nerdcommenter
 	url = git://github.com/scrooloose/nerdcommenter.git
 [submodule "bundle/zencoding"]
-	path = bundle/zencoding-vim
+	path = bundle/zencoding
 	url = git://github.com/mattn/zencoding-vim.git
 [submodule "bundle/css-color"]
-	path = bundle/vim-css-color
+	path = bundle/css-color
 	url = git://github.com/skammer/vim-css-color.git
 [submodule "bundle/less"]
-	path = bundle/vim-less
+	path = bundle/less
 	url = git://github.com/groenewege/vim-less.git
 [submodule "bundle/markdown"]
-	path = bundle/vim-markdown
+	path = bundle/markdown
 	url = git://github.com/mikewest/vim-markdown.git
 [submodule "bundle/bufexplorer"]
-	path = bundle/vim-bufexplorer
+	path = bundle/bufexplorer
 	url = git://github.com/onehouse/vim-bufexplorer.git
 [submodule "bundle/taglist"]
 	path = bundle/taglist
@@ -41,7 +41,7 @@
 	path = bundle/marksbrowser
 	url = git://github.com/vim-scripts/Marks-Browser.git
 [submodule "bundle/unimpaired"]
-	path = bundle/vim-unimpaired
+	path = bundle/unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
 [submodule "bundle/delimitMate"]
 	path = bundle/delimitMate
@@ -56,7 +56,7 @@
 	path = bundle/matchit
 	url = git://github.com/vim-scripts/matchit.zip.git
 [submodule "bundle/surround"]
-	path = bundle/vim-surround
+	path = bundle/surround
 	url = git://github.com/tpope/vim-surround.git
 [submodule "bundle/repeat"]
 	path = bundle/repeat
