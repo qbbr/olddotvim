@@ -3,7 +3,7 @@
 "           / _ \| __ )| __ )|  _ \( )___
 "          | | | |  _ \|  _ \| |_) |// __|
 "          | |_| | |_) | |_) |  _ <  \__ \
-"          \__\_\____/|____/|_| \_\ |___/
+"           \__\_\____/|____/|_| \_\ |___/
 "
 "                   _
 "           __   __(_)_ __ ___  _ __ ___
@@ -144,6 +144,9 @@ nmap _$ :call StripTrailingWhitespaces("%s/\\s\\+$//e")<CR>
 "=== горячие клавиши ===
 "=======================
 
+let mapleader = ","
+let g:mapleader = ","
+
 " выключаем  режим замены
 imap >Ins> <Esc>i
 
@@ -208,14 +211,8 @@ nmap <F12> :Ex<cr>
 vmap <F12> <esc>:Ex<cr>i
 imap <F12> <esc>:Ex<cr>i
 
-" php-doc
-inoremap <C-D> <ESC>:call PhpDocSingle()<CR>i
-nnoremap <C-D> :call PhpDocSingle()<CR>
-vnoremap <C-D> :call PhpDocRange()<CR>
-
 " run file with PHP CLI (CTRL-M)
 :autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
 
 " PHP parser check (CTRL-L)
 :autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
-
