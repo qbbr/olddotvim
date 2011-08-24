@@ -212,6 +212,11 @@ nmap <F9> :TlistToggle<CR>
 vmap <F9> <esc>:TlistToggle<CR>
 imap <F9> <esc>:TlistToggle<CR>
 
+" F10 - TaskList
+nmap <F10> <Plug>TaskList
+vmap <F10> <esc><Plug>TaskList
+imap <F10> <esc><Plug>TaskList
+
 " F12 - обозреватель файлов
 nmap <F12> :Ex<cr>
 vmap <F12> <esc>:Ex<cr>i
@@ -222,3 +227,4 @@ imap <F12> <esc>:Ex<cr>i
 
 " PHP parser check (CTRL-L)
 :autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
+
