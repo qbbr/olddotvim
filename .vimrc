@@ -86,14 +86,6 @@ set hidden
 
 set autoread                                " автоматическое перечитывание файла при изменении
 
-" GUI
-if has('gui_running')
-    set guioptions-=m                       " remove menu bar
-    set guioptions-=T                       " remove toolbar
-    set guifont=Terminus\ 12                " шрифт в gvim
-    set cursorline                          " подсветка текущей строки
-endif
-
 set ch=1                                    " высота командной строки
 set autoindent                              " автоотступ
 set backspace=indent,eol,start
