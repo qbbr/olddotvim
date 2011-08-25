@@ -64,3 +64,6 @@
 [submodule "bundle/tasklist"]
 	path = bundle/tasklist
 	url = git://github.com/vim-scripts/TaskList.vim.git
+[submodule "bundle/html5-syntax"]
+	path = bundle/html5-syntax
+	url = git://github.com/othree/html5-syntax.vim.git
