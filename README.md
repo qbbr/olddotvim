@@ -10,6 +10,36 @@
      _\ V / | | | | | | | | | (__
     (_)\_/  |_|_| |_| |_|_|  \___|
 
+Plugins
+-------
+
+`ManPageView` - просмотрщик мануалов PHP, Perl  
+`SearchComplete` - табуляция при поиске  
+`bufexplorer` - удобное переключение между буферами  
+`closetag` - закрытие html тегов  
+`command-t` - быстрый поиск фалов  
+`css-color` - визуальное отображение цвета в CSS  
+`dbtext` - SQL клиент  
+`delimitMate` - автозакрытие кавычек, скобок и т.д  
+`fugitive` - работа с GIT  
+`gundo` - визуальный менеджер истории изменения файла в виде дерева  
+`html5-syntax` - HTML5 синтаксис  
+`json` - подсветка JSON файлов  
+`less` - подсветка less файлов  
+`markdown` - подсветка markdowm фалов  
+`marksbrowser` - графический менеджер марок  
+`matchit` - расширенный %  
+`nerdcommenter` - комментирование кода  
+`nerdtree` - файловый менеджер в виде дерева  
+`repeat` - повторение операций  
+`snipmate` - поддержка сниппетов  
+`supertab` - autocomplete по табу  
+`surround`  
+`tabular` - выравнивание кода  
+`taglist`  
+`tasklist` - список заданий (TODO, FIXME)  
+`unimpaired`  
+`zencoding` - ускоренное написание html  
 
 Hotkeys
 -------
