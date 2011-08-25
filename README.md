@@ -14,3 +14,8 @@ install spell
 -------------
 
 `set spell`
+
+ManPageView
+-----------
+
+press `K` in normal mode
