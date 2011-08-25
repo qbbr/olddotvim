@@ -76,3 +76,6 @@
 [submodule "bundle/dbtext"]
 	path = bundle/dbtext
 	url = git://github.com/vim-scripts/dbext.vim.git
+[submodule "bundle/ManPageView"]
+	path = bundle/ManPageView
+	url = git://github.com/vim-scripts/ManPageView.git
