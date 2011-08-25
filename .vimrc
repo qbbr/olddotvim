@@ -124,6 +124,7 @@ let NERDTreeIgnore=['\.pyc', '\.swp', '\.git', '\.hg', '\.svn', '\.bzr']
 let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
 
+
 function! StripTrailingWhitespaces(command)
     " Preparation: save last search, and cursor position.
     let _s=@/
@@ -220,3 +221,5 @@ imap <F12> <esc>:Ex<cr>i
 " PHP parser check (CTRL-L)
 :autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
 
+" dbext config
+source $HOME/.vim/dbextconfig.vim
