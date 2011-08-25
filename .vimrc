@@ -125,7 +125,7 @@ filetype on                                 " включить определе�
 filetype plugin on                          " включить загрузку модулей
 filetype indent on                          " включить загрузку сценариев настройки отступов
 
-colorscheme wombat
+colorscheme wombat256mod
 
 " NERDTree
 let NERDTreeIgnore=['\.pyc', '\.swp', '\.git', '\.hg', '\.svn', '\.bzr']
