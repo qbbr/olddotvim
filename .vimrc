@@ -222,4 +222,6 @@ imap <F12> <esc>:Ex<cr>i
 :autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
 
 " dbext config
-source $HOME/.vim/dbextconfig.vim
+if filereadable("dbextconfig.vim")
+    source $HOME/.vim/dbextconfig.vim
+endif
