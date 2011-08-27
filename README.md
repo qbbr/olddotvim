@@ -10,6 +10,16 @@
 		  \ V / | | | | | | |
 		   \_/  |_|_| |_| |_|
 
+Install
+-------
+
+```bash
+cd ~
+git clone --recursive git://github.com/qbbr/dotvim.git .vim
+ln -s .vim/.vimrc
+ln -s .vim/.gvimrc
+```
+
 Bundles
 -------
 
