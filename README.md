@@ -79,7 +79,8 @@ Hotkeys
 `,c<space>` - закомментировать/раскомментировать код
 
 `C-y,` - zencoding  
-`C-_` - закрыть html тэг (closetag)
+`C-_` - закрыть html тэг (closetag)  
+`,x` - отформатировать выделенный участок html/xml кода (http://tidy.sourceforge.net/)
 
 `_$` - удалить лишние отступы в тексте (StripTrailingWhitespaces)
 
