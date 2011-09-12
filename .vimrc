@@ -221,7 +221,7 @@ imap <F12> <esc>:Ex<cr>i
 " PHP parser check (CTRL-L)
 :autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
 
-vmap ,x :!tidy -q -xml -utf8 -ashtml --tidy-mark no -indent --indent-spaces 4 -wrap 0 --new-blocklevel-tags article,header,footer,nav,section --new-inline-tags video,audio,canvas,ruby,rt,rp --break-before-br yes --sort-attributes alpha 2>/dev/null<CR>
+vmap ,x :!tidy -q -utf8 -xml -ashtml --tidy-mark no -indent --indent-spaces 4 -wrap 0 --new-blocklevel-tags article,header,footer,nav,section --new-inline-tags video,audio,canvas,ruby,rt,rp --output-html yes --break-before-br yes --sort-attributes alpha<CR>
 
 " dbext config
 if filereadable("dbextconfig.vim")
