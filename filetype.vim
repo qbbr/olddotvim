@@ -12,3 +12,8 @@ au BufRead,BufNewFile jquery.*.js set ft=javascript syntax=jquery
 
 au BufRead *error.log setf apachelogs
 au BufRead *access.log setf httplog
+
+" read ms word file, need antiword
+autocmd BufReadPre *.doc set ro
+autocmd BufReadPre *.doc set hlsearch!
+autocmd BufReadPost *.doc %!antiword "%"
