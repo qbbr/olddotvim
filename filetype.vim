@@ -17,3 +17,5 @@ au BufRead *access.log setf httplog
 autocmd BufReadPre *.doc set ro
 autocmd BufReadPre *.doc set hlsearch!
 autocmd BufReadPost *.doc %!antiword "%"
+
+au Filetype twig,htmltwig,html,htmldjango let b:unaryTagsStack=""
