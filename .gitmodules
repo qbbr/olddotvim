@@ -85,3 +85,6 @@
 [submodule "bundle/coffee-script"]
 	path = bundle/coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle/vim-symfony"]
+	path = bundle/vim-symfony
+	url = git://github.com/qbbr/vim-symfony.git
