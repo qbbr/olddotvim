@@ -49,6 +49,7 @@ Bundles
 `taglist`  - список классов, методов в файле
 `tasklist` - список заданий (TODO, FIXME)  
 `unimpaired`  
+`vim-symfony` - snippets for symfony2  
 `vim-twig` - подсветка twig файлов и snippets for snipmate  
 `zencoding` - ускоренное написание html  
 
