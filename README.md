@@ -41,6 +41,7 @@ Bundles
 `matchit` - расширенный %  
 `nerdcommenter` - комментирование кода  
 `nerdtree` - файловый менеджер в виде дерева  
+`PIV` - PHP Integration for VIM  
 `repeat` - повторение операций  
 `snipmate` - поддержка сниппетов  
 `supertab` - autocomplete по табу  
